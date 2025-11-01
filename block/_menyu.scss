@@ -35,9 +35,6 @@
   text-align: center;
   transition: transform 0.3s;
 
-//   &:hover {
-//     transform: translateY(-5px);
-//   }
 
   &__badge {
     position: absolute;
@@ -93,7 +90,6 @@
     padding: 10px 0;
     width: 100%;
     border-radius: 4px;
-    cursor: pointer;
     transition: background 0.3s;
 
     &:hover {
@@ -102,51 +98,7 @@
   }
 }
 
-/* 📱 Responsive (telefon uchun) */
-@media (max-width: 768px) {
-  .menu {
-    &__title {
-      font-size: 26px;
-      margin-bottom: 30px;
-    }
 
-    &__cards {
-      gap: 20px;
-    }
-  }
-
-  .card {
-    width: 240px;
-    padding: 15px;
-
-    &__img {
-      width: 140px;
-      height: 140px;
-    }
-
-    &__price {
-      top: 100px;
-      right: 50px;
-      width: 45px;
-      height: 45px;
-      font-size: 14px;
-      line-height: 45px;
-    }
-
-    &__name {
-      font-size: 16px;
-    }
-
-    &__desc {
-      font-size: 13px;
-    }
-
-    &__btn {
-      font-size: 14px;
-      padding: 8px 0;
-    }
-  }
-}
 
 @media (max-width: 480px) {
   .card {
