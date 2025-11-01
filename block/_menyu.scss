@@ -1,0 +1,158 @@
+.menu {
+  background: url('/img/menyu.png') no-repeat center center/cover;
+  background-repeat: no-repeat;
+  padding: 60px 0;
+  color: #000;
+  text-align: center;
+  position: relative;
+
+  &__overlay {
+    padding: 40px 20px;
+  }
+
+  &__title {
+    font-size: 32px;
+    margin-bottom: 50px;
+    font-weight: 600;
+  }
+
+  &__cards {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 30px;
+    flex-wrap: wrap;
+  }
+}
+
+.card {
+  background: #fff;
+  width: 280px;
+  padding: 20px;
+  position: relative;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+  border-radius: 6px;
+  text-align: center;
+  transition: transform 0.3s;
+
+//   &:hover {
+//     transform: translateY(-5px);
+//   }
+
+  &__badge {
+    position: absolute;
+    top: 10px;
+    left: 0;
+    background: #c47b3f;
+    color: #fff;
+    font-size: 12px;
+    padding: 5px 10px;
+    border-radius: 0 4px 4px 0;
+    font-weight: 600;
+  }
+
+  &__img {
+    width: 160px;
+    height: 160px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-bottom: 10px;
+  }
+
+  &__price {
+    position: absolute;
+    top: 120px;
+    right: 60px;
+    background: #c47b3f;
+    color: #fff;
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    font-size: 16px;
+    line-height: 50px;
+    text-align: center;
+    font-weight: 600;
+  }
+
+  &__name {
+    font-size: 18px;
+    margin: 15px 0 5px 0;
+  }
+
+  &__desc {
+    font-size: 14px;
+    color: #555;
+    margin-bottom: 20px;
+  }
+
+  &__btn {
+    background: #c47b3f;
+    border: none;
+    color: #fff;
+    font-weight: 600;
+    padding: 10px 0;
+    width: 100%;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background 0.3s;
+
+    &:hover {
+      background: #a9622f;
+    }
+  }
+}
+
+/* 📱 Responsive (telefon uchun) */
+@media (max-width: 768px) {
+  .menu {
+    &__title {
+      font-size: 26px;
+      margin-bottom: 30px;
+    }
+
+    &__cards {
+      gap: 20px;
+    }
+  }
+
+  .card {
+    width: 240px;
+    padding: 15px;
+
+    &__img {
+      width: 140px;
+      height: 140px;
+    }
+
+    &__price {
+      top: 100px;
+      right: 50px;
+      width: 45px;
+      height: 45px;
+      font-size: 14px;
+      line-height: 45px;
+    }
+
+    &__name {
+      font-size: 16px;
+    }
+
+    &__desc {
+      font-size: 13px;
+    }
+
+    &__btn {
+      font-size: 14px;
+      padding: 8px 0;
+    }
+  }
+}
+
+@media (max-width: 480px) {
+  .card {
+    width: 220px;
+    &__price {
+      right: 45px;
+    }
+  }
+}
